@@ -1,0 +1,14 @@
+FROM python:3.10
+LABEL maintainer="jagadeesh, 210919106033@smartinternz.com"
+RUN apt-get update
+RUN mkdir /app
+WORKDIR /app
+COPY . /app
+RUN pip install flask
+RUN pip install flask_session
+RUN pip install ibm-db
+RUN pip install ibm_db
+RUN pip install flask_mail
+EXPOSE 5000
+ENTRYPOINT [ "python" ]
+CMD [ "app.py" ]

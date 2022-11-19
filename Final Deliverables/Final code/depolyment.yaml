@@ -1,0 +1,20 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: app-dep
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: smartfashion
+   template:
+     metadata:
+       labels:
+         app: smartfashion
+     spec:
+       containers:
+       - name: smartfashion
+         image: icr.io/glaetique_01/app
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000

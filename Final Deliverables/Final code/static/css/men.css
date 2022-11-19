@@ -1,0 +1,40 @@
+.men-results{
+    width: 100%;
+    padding: 30px 0;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 10vw;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.heading span{
+    font-weight: 700;
+    
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-row-gap: 40px;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    
+    
+}
+.product-card{
+    border-radius: 10px;
+   
+}
+.product-image{
+    border-radius: 10px;
+    
+    
+}
